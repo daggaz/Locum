@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% load common %}
+
+{% block content %}
+	<form action="" method="post" id="login-form">{% csrf_token %}
+		{% field form.username %}
+		{% field form.password %}
+		<input type="hidden" name="next" value="{{ next }}" />
+		<input type="submit" name="submit" value="Log in" />
+	</form>
+{% endblock %}

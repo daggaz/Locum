@@ -1,0 +1,15 @@
+#preamble,
+#footer .actions {
+	display: none;
+}
+
+#content {
+	/* Using !important to override JS-supplied inline style */
+	height: auto !important;
+}
+
+.tabs h2.current {
+	border: 1px solid #858585;
+	font-weight: bold;
+	margin-bottom: 0;
+}

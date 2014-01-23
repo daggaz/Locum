@@ -1,0 +1,80 @@
+.tabular {
+	border-bottom: 1px solid #EBEBEB;
+	clear: both;
+}
+
+.tabular thead.hidden th a,
+.tabular thead.hidden th span {
+	line-height: 0;
+	padding-bottom: 0;
+	padding-top: 0;
+	visibility: hidden;
+}
+
+.tabular thead th {
+	background: url(../img/thead_background.png) repeat-x left center;
+	color: #797979;
+	font-weight: bold;
+	vertical-align: middle;
+	width: 1%;
+}
+
+.tabular thead th.sorted {
+	background: url(../img/thead_background_sorted.png) repeat-x left center;
+}
+
+.tabular thead th a,
+.tabular thead th span {
+	background: url(../img/th_right.png) no-repeat right center;
+	color: #797979;
+	display: block;
+	font-weight: bold;
+	padding: 10px 20px;
+}
+
+.tabular thead th a:hover {
+	background: url(../img/thead_background_hover.png) repeat-x right center;
+}
+
+.tabular thead th.sorted a,
+.tabular thead th.sorted a:hover {
+	padding-right: 35px;
+	background: url(../img/sort_descending.png) no-repeat right center;
+}
+
+.tabular thead th.ascending a,
+.tabular thead th.ascending a:hover {
+	background: url(../img/sort_ascending.png) no-repeat right center;
+}
+
+.tabular td {
+	border-bottom: 1px solid #EBEBEB;
+	padding: 5px 20px 4px;
+	vertical-align: top;
+}
+
+.tabular td.sorted {
+	background: #F1F1F1;
+}
+
+.tabular tr.odd td {
+	background: #EBEBEB;
+	border: none;
+}
+
+.tabular tr.even td {
+	border: none;
+}
+
+.tabular tr.odd td.sorted {
+	background: #DBDBDB;
+}
+
+.tabular td a {
+	font-weight: bold;
+}
+
+.tabular td .error {
+	font-weight: bold;
+	color: #f00;
+}

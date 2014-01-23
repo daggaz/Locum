@@ -1,0 +1,186 @@
+#sitemap_headings {
+	background: url(../../admin/img/thead_background.png) repeat-x left center;
+	color: #797979;
+	float: left;
+	font-weight: bold;
+	vertical-align: middle;
+	width: 100%;
+}
+#sitemap_headings div.node {
+	background: url(../../admin/img/thead_background_sorted.png) repeat-x left center;
+	float: left;
+	width: 425px;
+}
+#sitemap_headings div.options {
+	background: url(../../admin/img/thead_background.png) repeat-x left center;
+	float: left;
+	width: 135px;
+}
+#sitemap_headings div.type {
+	background: url(../../admin/img/thead_background.png) repeat-x left center;
+	float: left;
+	width: 220px;
+}
+#sitemap_headings div.actions {
+	background: url(../../admin/img/thead_background.png) repeat-x left center;
+	float: left;
+	width: 174px;
+}
+
+.sitemap_help_text {
+	color: #666666;
+	font-size: 90%;
+	padding: 3px 20px;
+	border-bottom: 1px solid #ebebeb;
+	margin: 0;
+}
+
+#sitemap_headings div.node span,
+#sitemap_headings div.options span,
+#sitemap_headings div.type span,
+#sitemap_headings div.actions span {
+	background: url(../../admin/img/th_right.png) no-repeat right center;
+	color: #797979;
+	display: block;
+	font-weight: bold;
+	padding: 10px 20px;
+}
+#sitemap_headings div.actions span {
+	background: transparent;
+}
+
+#content {
+	position: static;
+}
+
+#sitemap_body {
+	clear: left;
+	overflow: auto;
+	position: relative;
+}
+
+#sitemap_list {
+	border-bottom: 1px solid #EBEBEB;
+	clear: left;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+#sitemap_list li {
+	background: #FFFFFF;
+	clear: left;
+	display: block;
+	float: left;
+	list-style-type: none;
+	vertical-align: top;
+	width: 100%;
+}
+#sitemap_list li.hiddenNode {
+	height: 0;
+	overflow: hidden;
+}
+
+#sitemap_list li div.node,
+#sitemap_list li div.status,
+#sitemap_list li div.type,
+#sitemap_list li div.actions {
+	padding: 5px 20px 4px;
+}
+
+
+#sitemap_list li div.actions a {
+	padding-right: 20px;
+}
+
+#sitemap_list li div.node {
+	background: #F1F1F1;
+}
+#sitemap_list li.odd {
+	background: #EBEBEB;
+}
+#sitemap_list li.odd div.node {
+	background: #DBDBDB;
+}
+
+#sitemap_list li a {
+	font-weight: bold;
+}
+
+
+#sitemap_list li div.node {
+	float: left;
+	min-height: 20px;
+	width: 385px;
+}
+#sitemap_list li div.status {
+	float: left;
+	width: 125px;
+	padding: 5px 0 0 5px;
+}
+#sitemap_list li div.status .disabled,
+#sitemap_list li div.status .hidden,
+#sitemap_list li div.status .hidden_from_sitemap,
+#sitemap_list li div.status .protected,
+#sitemap_list li div.status .anchored {
+	display: block;
+	float: left;
+	padding: 0px 0px 0px 5px;
+	width: 20px;
+}
+#sitemap_list li div.type {
+	float: left;
+	width: 180px;
+}
+#sitemap_list li div.actions {
+	float: left;
+	width: 134px;
+}
+
+#sitemap_list li div.node span.title {
+	background: url('../img/file.png') left center no-repeat;
+	cursor: pointer;
+}
+#sitemap_list li div.node span.title img {
+	vertical-align: bottom;
+}
+#sitemap_list li.collapsed div.node span.title {
+	background: url('../img/directory.png') left center no-repeat;
+}
+#sitemap_list li.expanded div.node span.title {
+	background: url('../img/directory-open.png') left center no-repeat;
+}
+
+
+
+#sitemap_list li.target li,
+#sitemap_list li.target li div.node {
+	background: #CCC;
+	color: #b11;
+}
+#content.sitemap_admin div.marker {
+	position: absolute;
+	height: 0px;
+	width: 0px;
+	border-left: 2px solid #b11;
+	border-bottom: 2px solid #b11;
+}
+
+
+body.sitemap_nodrag,
+body.sitemap_nodrag #sitemap_list li div.node span.title {
+	cursor: not-allowed !important;
+}
+body.sitemap_move,
+body.sitemap_move #sitemap_list li div.node span.title {
+	cursor: move !important;
+}
+
+/* IE6 hacks -- to put in another .css file */
+/*
+#sitemap_list li.target {
+	height: 1px;
+}
+#content.sitemap_admin div.marker {
+	line-height: 1px;
+}
+*/

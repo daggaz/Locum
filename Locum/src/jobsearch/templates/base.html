@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>{% filter striptags %}{% block page_title %}{{ page_heading|default:"Untitled"|escape }}{% endblock %}{% endfilter %}</title>
+		
+		<link type="text/css" rel="stylesheet" href="{{ MEDIA_URL }}css/vi_core.css" />
+		<link type="text/css" rel="stylesheet" href="{{ MEDIA_URL }}css/vs_core.css" media="print" />
+		<script type="text/javascript" src="{{ MEDIA_URL }}js/mootools.js"></script>
+
+		<link rel="shortcut icon" href="{{ MEDIA_URL }}img/favicon.ico" />
+		<link rel="icon" href="{{ MEDIA_URL }}img/favicon.ico" />
+
+		
+		{% block extrahead %}{% endblock %}
+	</head>
+	<body>
+		<div id="page">
+			<div id="content" class="{% block contentclass %}{% endblock %}">
+				{% block content %}
+				{% endblock content %}
+			</div>
+			
+			<div id="footer">
+				{% block footer %}{% endblock %}
+			</div>
+		</div>		
+	</body>
+</html>

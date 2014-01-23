@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<h1 class="title">{{ position.title }}</h1>
+	
+	<ul>
+		{% for application in applications %}
+			<li>
+				<h2>{{ application.applicant.user.get_full_name }}</h2>
+				<a href="{{ application.get_absolute_url }}">Details</a>
+			</li>
+		{% endfor %}
+	</ul>
+{% endblock %}

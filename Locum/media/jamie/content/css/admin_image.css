@@ -1,0 +1,102 @@
+div.image_set {
+    clear: left;
+	padding: 10px 10px;
+	position: relative;
+    width: 100%;
+}
+
+div.image_set div.image {
+	float: left;
+	margin: 10px 20px;
+	width: 106px;
+}
+
+div.image_set .name {
+	display: block;
+	font-weight: bold;
+	text-align: center;
+}
+
+div.image_set .size {
+	display: block;
+	white-space: nowrap;
+	text-align: center;
+}
+
+div.image_set .clear {
+	clear: both;
+	height: 0;
+}
+
+div.image_set img,
+div.image_set input {
+	display: block;
+	float: none;
+}
+
+div.image_set .handle {
+	float: left;
+	margin: 10px 20px;
+	padding: 40px 0 0 0;
+}
+
+div.image_set .handle .index {
+	color: #bbb;
+	display: block;
+	font-size: 50pt;
+	font-style: italic;
+	position: absolute;
+	right: 100px;
+	text-align: right;
+	top: 60px;
+}
+
+div.image_set div.checkbox_input {
+	margin-top: 20px;
+}
+
+div.image_set div.checkbox_input input {
+	display: inline;
+}
+
+div.image_set input.button {
+    display: block;
+    margin: 0 0 10px 0;
+    width: 116px;
+}
+
+div.image_set div.image_thumbnail {
+	background: #eee;
+	border: 3px solid #c6c6c6;
+	height: 100px;
+	margin: 5px 0;
+	width: 100px;
+}
+
+div.image_thumbnail {
+	text-align: center;
+}
+
+#add_image {
+	clear: both;
+}
+
+
+/* The upload dialog */
+
+.upload_image_dialog {
+	padding: 0 20px;
+	font-family: verdana,sans-serif;
+	font-size: 90%;
+}
+.upload_image_dialog p {
+	margin: 1em 0 0.5em 0;
+}
+.upload_image_dialog label {
+	display: block;
+	margin: 0.5em 0 0 1em;
+}
+.upload_image_dialog label span {
+	padding-left: 10px;
+}
+

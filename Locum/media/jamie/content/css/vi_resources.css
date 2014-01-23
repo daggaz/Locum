@@ -1,0 +1,170 @@
+* {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #fff;
+	color: #333;
+	font: 12px "Lucida Grande",Verdana,Helvetica,Arial,sans-serif;
+}
+h1 {
+	background: #b70e12;
+	color: #fff;
+	font-size: 1em;
+	xline-height: 20px;
+	padding: 0.5em;
+}
+
+form {
+	clear: both;
+	padding: 0.5em;
+}
+
+h2 {
+	font-size: 1em;
+	margin: 0 0 0.25em;
+}
+
+#uploading {
+	background: #fff url(../img/uploading.gif) no-repeat center 120px;
+	display: none;
+	filter: alpha(opacity=90);
+	left: 0;
+	height: 360px;
+	text-align: center;
+	top: 0;
+	opacity: .9;
+	padding-top:2em;
+	position: absolute;
+	width: 100%;
+	z-index: 1000;
+	-moz-opactiy: .9;
+}
+#uploading div {
+	margin-top: 150px;
+}
+
+#tabs {
+	border-bottom: 1px solid #999;
+	float: left;
+	width: 100%;
+}
+#tabs li {
+	display: block;
+	float: left;
+	padding: 0.25em 0.25em 0;
+}
+#tabs li strong, #tabs li a {
+	background: #fff;
+	border: 1px solid #999;
+	display: block;
+	padding: 0.5em;
+	position: relative;
+	margin-bottom: -1px;
+}
+#tabs li strong {
+	border-bottom: 1px solid #fff;
+}
+
+#listing {
+	border-right: 1px solid #000;
+	clear: both;
+	float: left;
+	height: 300px;
+	overflow: auto;
+	width: 50%;
+}
+#listing ul li {
+	background: #fff;
+}
+#listing li em {
+	display: block;
+	padding: 0.5em;
+}
+#listing li a {
+	background: url(../img/file.png) no-repeat 2px center;
+	border:none;
+	color: #000;
+	display: block;
+	outline: 0;
+	padding: 0.5em;
+	padding-left: 30px;
+}
+#listing li a.directory {
+	background-image: url(../img/directory.png);
+}
+#listing li a.directory-open {
+	background-image: url(../img/directory-open.png);
+}
+#listing li a.directory-open-file {
+	background-image: url(../img/directory-open-file.png);
+}
+
+body #listing li a:hover, #listing li a.selected {
+	background-color: #ddeeff;
+	border-color: #bbddff;
+	font-weight: bold;
+}
+#listing li.even {
+	background: #f8f8f8;
+}
+#listing li.even a {
+	border-color: #eee;
+}
+#listing li li {
+	padding-left: 2em;
+}
+#listing li.toolbar {
+}
+#listing li.toolbar div {
+	background: #ddd;
+	border-bottom: 1px solid white;
+	padding: 2px;
+}
+#listing li.toolbar img {
+	background-color: #eee;
+	border: 1px solid #999;
+	border-color: #ccc #999 #999 #ccc;
+	cursor: pointer;
+	padding: 2px;
+	margin-right: 2px;
+}
+#listing li.toolbar img.hover, #listing li.toolbar img.on {
+	background: #999;
+}
+#listing li.toolbar form {
+	display: none;
+}
+#listing li.toolbar form input {
+	font-size: 100%;
+	padding: 0;
+	margin: 0;
+}
+#preview {
+	xborder-left: 1% solid #333;
+	height: 300px;
+	overflow: hidden;
+	float:right;
+	width:49%;
+	position: relative;
+	text-align: center;
+}
+#preview img {
+	display: none;
+}
+#select {
+	background: #333;
+	border-top: 1px solid #000;
+	bottom: 0;
+	color: #fff;
+	display: block;
+	right: 0;
+	line-height: 1em;
+	opacity: 0.8;
+	padding: 0.5em 5%;
+	position: absolute;
+	text-align: right;
+	text-transform: uppercase;
+	xwidth: 90%;
+}

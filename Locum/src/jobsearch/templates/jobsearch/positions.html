@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<ol>
+		{% for position in positions %}
+			<li>
+				<div class="title">{{ position.title }}</div>
+				<div class="description">{{ position.description|truncatewords_html:15|safe }}</div>
+				<a href="{{ position.get_absolute_url }}">Details</a>
+			</li>
+		{% endfor %}
+	</ol>
+{% endblock %}

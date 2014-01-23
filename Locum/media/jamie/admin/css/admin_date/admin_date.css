@@ -1,0 +1,37 @@
+a.js_calendar img {
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+table.js_calendar_main caption {
+    font-weight: bold;
+    margin: .5em auto;
+    text-align: center;
+}
+
+table.js_calendar_advance,
+table.js_calendar_main {
+    margin: 0 auto;
+    width: 140px;
+}
+
+table.js_calendar_advance td,
+table.js_calendar_main td {
+    border: 1px solid #ddd;
+    text-align: center;
+    
+}
+
+table.js_calendar_advance a:hover,
+table.js_calendar_main a:hover {
+    text-decoration:underline;
+    background: #ddd;
+}
+
+table.js_calendar_advance a,
+table.js_calendar_main a {
+    cursor: pointer;
+    display: block;
+    padding: 2px;
+}
+

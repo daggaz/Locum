@@ -1,0 +1,8 @@
+Rating system needs to include DNA stats
+
+Contracts/applications will include:
+ - Our basic terms (it's not our fault)
+ - Customisable terms (fee, % payment on cancellation, etc)
+ - Custom terms (terms that contradict basic/customisable terms deemed invalid)
+
+Separate users (or not!) and roles/permissions for employers (i.e. bill payers) and sites (i.e. pharmacy managers posting jobs).

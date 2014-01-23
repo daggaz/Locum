@@ -1,0 +1,28 @@
+.autocompleter-choices {
+	background-color: white;
+	border: 2px solid;
+	border-color: #999 #ccc #ccc #999;
+	font-family: Verdana,Helvetica,Arial,sans-serif;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	text-align: left;
+	z-index: 50;
+}
+.autocompleter-choices li {
+	font-size: 80%;
+	font-weight: normal;
+	cursor: pointer;
+	padding: 0.25em;
+	position: relative;
+}
+.autocompleter-choices li.autocompleter-selected {
+	background-color: #9cf;
+}
+.autocompleter-choices span.autocompleter-queried {
+	font-weight: bold;
+}
+input.autocompleter-loading {
+	background: #fff url(../../img/small_spinner.gif) no-repeat right center;
+}

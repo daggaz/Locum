@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<h1>Application from {{ application.applicant.user.get_full_name }}</h1>
+	
+	<h2>Position</h2>
+	<p>{{ application.position.title }}</p>
+	<div class="description">{{ application.position.description|safe }}</div>
+	
+	<h2>Applicant</h2>
+	<div>
+		{{ application.applicant.user.get_full_name }}
+		<a href="{{ application.applicant.get_absolute_url }}">View profile</a>
+	</div>
+	
+	<h2>Application Details</h2>
+	
+	
+{% endblock %}

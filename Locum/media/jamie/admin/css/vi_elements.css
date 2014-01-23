@@ -1,0 +1,72 @@
+body {
+	color: #000;
+}
+
+a {
+	color: #B82F35;
+	text-decoration: none;
+}
+a:hover {
+	color: #B82F35;
+	text-decoration: underline;
+}
+
+p {
+	margin: .5em 0;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+
+input.button,
+button.button,
+a.button,
+a.button:hover {
+	background: #fff url(../img/button_background.png) repeat-x bottom left;
+	border: 1px solid #929292;
+	color: #3F3F3F;
+	cursor: pointer;
+	font: 90% verdana, sans-serif;
+	padding: 4px 13px;
+	margin-left: 8px;
+	text-decoration: none;
+	vertical-align: middle;
+	white-space:nowrap;
+}
+
+a.button,
+a.button:hover {
+	padding: 5px 13px;
+	margin: 0 0 0 8px;
+	line-height: 2.4em;
+}
+
+input.default,
+button.default,
+a.default,
+a.default:hover {
+	font-weight: bold;
+}
+
+div.actions .separator {
+	padding: 0 20px 0 0;
+}
+
+iframe.preview {
+	border: 1px solid #ccc;
+	height: 100%;
+	width: 100%;
+}
+
+#footer input.button,
+#footer button.button,
+#footer a.button,
+#footer a.button:hover {
+	border-color: #fff;
+}
